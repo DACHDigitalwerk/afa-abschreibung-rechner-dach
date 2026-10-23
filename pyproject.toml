@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "afa-dach"
+version = "1.0.0"
+authors = [
+  { name="DACH Digitalwerk", email="kontakt@dach-digitalwerk.netlify.app" },
+]
+description = "DACH AfA-Rechner & Abschreibungs-Optimierer 2026: Lineare & degressive AfA nach Wachstumschancengesetz, optimales Wechseljahr, § 7g Sonder-AfA & GWG-Grenzen (DE, AT, CH)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Intended Audience :: Financial and Insurance Industry",
+]
+keywords = [
+    "afa", "abschreibung", "wachstumschancengesetz", "anlagenbuchhaltung", 
+    "anlagenspiegel", "gwg", "estg", "bilanz", "steuern", "deutschland", 
+    "oesterreich", "schweiz", "python", "cli"
+]
+
+[project.urls]
+"Homepage" = "https://dach-digitalwerk.netlify.app/afa-abschreibungs-rechner/"
+"Bug Tracker" = "https://github.com/DACHDigitalwerk/afa-abschreibung-rechner-dach/issues"
+
+[project.scripts]
+dach-afa = "afa_dach.cli:main"
